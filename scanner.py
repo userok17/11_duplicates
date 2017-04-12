@@ -8,6 +8,8 @@ class ScannerFiles:
         '''
         Сканирование файлов
         '''
+        if not os.path.isdir(path):
+            return None
         for item in os.listdir(path):
             filepath = os.path.join(path, item)
             if os.path.isdir(filepath):
