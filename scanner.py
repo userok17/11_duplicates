@@ -45,6 +45,8 @@ class ScannerFiles:
         '''
         Вывести на экран дубликаты файлов
         '''
+        if not self.list_duplicates:
+            return
         for key, value in self.list_duplicates.items():
             if len(value['filespath']) < 2:
                 continue
