@@ -41,13 +41,13 @@ class ScannerFiles:
 
     def print_duplicates(self):
         '''
-        Вывести на экран дупликаты файлов
+        Вывести на экран дубликаты файлов
         '''
         for key, value in self.list_duplicates.items():
             if len(value['filespath']) < 2:
                 continue
             
-            print('Найдены дупликаты файла: {}'.format(value['filename']))
+            print('Найдены дубликаты файла: {}'.format(value['filename']))
             print('Размер: {}'.format(value['size']))
             filespath = '\n'.join(value['filespath'])
             print('Пути к директориям:\n{}'.format(filespath))
