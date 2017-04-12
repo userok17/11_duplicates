@@ -1,7 +1,34 @@
 # Anti-Duplicator
 
-[TODO. There will be project description]
+Cкрипт, который принимает на вход папку, просматривает все файлы в ней (и всех подпапках и под-под-...папках) и сообщает, если находит дубликаты.
 
-# Project Goals
+# Как запустить
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+
+Запуск на Linux:
+
+'''
+python3 duplicates.py -f <filepath>
+
+Найдены дупликаты файла: 1.mp4
+Размер: 2.37 MB
+Пути к директориям:
+/home/user/devman/11_duplicates/video/bla/dsf/1.mp4
+/home/user/devman/11_duplicates/video/bla/1.mp4
+/home/user/devman/11_duplicates/video/1.mp4
+
+Найдены дупликаты файла: femida.mp4
+Размер: 8.99 MB
+Пути к директориям:
+/home/user/devman/11_duplicates/video/bla/dsf/aa/femida.mp4
+/home/user/devman/11_duplicates/video/bla/dsf/aa/33/femida.mp4
+
+'''
+
+Запуск на Windows происходит аналогично.
+
+# Цели проекта
+
+Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)
+
