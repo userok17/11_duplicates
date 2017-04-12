@@ -8,7 +8,7 @@ Cкрипт, который принимает на вход папку, про�
 
 Запуск на Linux:
 
-'''
+```#!bash
 python3 duplicates.py -f <filepath>
 
 Найдены дупликаты файла: 1.mp4
@@ -24,7 +24,7 @@ python3 duplicates.py -f <filepath>
 /home/user/devman/11_duplicates/video/bla/dsf/aa/femida.mp4
 /home/user/devman/11_duplicates/video/bla/dsf/aa/33/femida.mp4
 
-'''
+```
 
 Запуск на Windows происходит аналогично.
 
