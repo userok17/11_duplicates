@@ -14,9 +14,10 @@ class ScannerFiles:
             filepath = os.path.join(path, item)
             if os.path.isdir(filepath):
                 self.search(filepath)
-            filesize = os.path.getsize(filepath) # Размер файла
-            file_id = '{}{}'.format(item, filesize) # Уникальный идентификатор
-            if file_id not in self.list_duplicates: # если нету уникального идентификатора, то создать
+                continue
+            filesize = os.path.getsize(filepath) 
+            file_id = '{}{}'.format(item, filesize) 
+            if file_id not in self.list_duplicates: 
                 self.list_duplicates[file_id] = {
                     'file_id': file_id,
                     'filename': item,
