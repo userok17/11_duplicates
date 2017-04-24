@@ -3,7 +3,7 @@ from scanner import ScannerFiles
 
 def main():
     parser = ArgumentParser(description='Поиск дубликатов')
-    parser.add_argument('-f', '--path', required=True, dest='path', help='Укажите директорию для поиска дупликатов')
+    parser.add_argument('-p', '--path', required=True, dest='path', help='Укажите директорию для поиска дупликатов')
     args = parser.parse_args()
     
     scanner = ScannerFiles()
